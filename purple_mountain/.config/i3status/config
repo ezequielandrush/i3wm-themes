@@ -13,8 +13,8 @@ order += "cpu_temperature 0"
 order += "memory"
 order += "disk /"
 order += "disk /home"
-order += "ethernet enp1s0"
-order += "wireless wlp3s0"
+order += "ethernet enp8s0"
+order += "wireless wlp0s20f3"
 order += "volume master"
 order += "battery 0"
 order += "time "
@@ -40,12 +40,12 @@ disk "/home" {
         format = "<span background='#a28e97'>  Used:%used / Free:%free </span>"
 }
 
-ethernet enp1s0 {
-        format_up = "<span background='#a28e97'>  %ip </span>"
+ethernet enp8s0 {
+        format_up = "<span background='#a28e97'>  enp8S0 %ip </span>"
         format_down = "<span background='#dea59a'>  Disconnected </span>"
 }
 
-wireless wlp3s0 {
+wireless wlp0s20f3 {
         format_up = "<span background='#a28e97'>  %essid:%ip </span>"
         format_down = "<span background='#dea59a'>  Disconnected </span>"
 }
